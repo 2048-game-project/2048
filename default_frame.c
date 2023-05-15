@@ -563,6 +563,7 @@ void pause_screen()
 	HANDLE handle;
 	handle = GetStdHandle(STD_OUTPUT_HANDLE);
 	COORD coord;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); // Èò»ö
 
 	coord.X = 15;
 	coord.Y = 5;
